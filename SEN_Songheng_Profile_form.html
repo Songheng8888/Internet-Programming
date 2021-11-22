@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile form</title>
+    <body>
+        <form action="/my_backend/profile" method="post">
+            <table width="100%" cellspacing="30px" style="border: 3px solid black; margin:auto;">
+                <tr>
+                    <td colspan="4" style="border: 2px solid black; background-color: rgb(97, 68, 226); width:100%">
+                        <h2>Tell us about yourself</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h4>Profile Information</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div> <b>Last Name</b> </div>
+                        <input type="text" name="Last_Name" style="width: 70%">
+                    </td>
+                    <td colspan="2">
+                        <span> <b>First Name</b> </span>
+                        <input  type="text" name="First_Name" style="width: 100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div> <b>Email</b> </div>
+                        <input type="text" name="Email" style="width: 70%">
+                    </td>
+                    <td colspan="2">
+                        <span> <b>Phone</b> </span>
+                        <input type="text" name="Phone" style="width: 100%">
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="gender"> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender"> Female
+                        </label>
+                    </td>
+                 </tr> 
+                
+                <tr> 
+                    
+                      <td colspan="4">
+                          <hr color="black"> 
+                          <h4>Current Address</h4> 
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                    
+                    <select name="City">
+                        <option value=" " disabled selected >City/Province</option>
+                        <option value="Banteay Meanchey">Banteay Meanchey</option>
+                        <option value="Battambang">Battambang</option>
+                        <option value="Kampong Cham">Kampong Cham</option>
+                        <option value="Kampong Chhnang">Kampong Chhnang</option>
+                        <option value="Kampong Speu">Kampong Speu</option>
+                        <option value="Kampong Thom">Kampong Thom</option>
+                        <option value="Kampot">Kampot</option>
+                        <option value="Kandal">Kandal</option>
+                        <option value="Koh Kong">Koh Kong</option>
+                        <option value="Kratié">Kratié</option>
+                        <option value="Mondulkiri">Mondulkiri</option>
+                        <option value="Phnom Penh">Phnom Penh</option>
+                        <option value="Preah Vihear">Preah Vihear</option>
+                        <option value="Prey Veng">Prey Veng</option>
+                        <option value="Pursat">Pursat</option>
+                        <option value="Ratanak Kiri">Ratanak Kiri</option>
+                        <option value="Siem Reap">Siem Reap</option>
+                        <option value="Preah Sihanouk">Preah Sihanouk</option>
+                        <option value="Stung Treng">Stung Treng</option>
+                        <option value="Svay Rieng">Svay Rieng</option>
+                        <option value="Takéo">Takéo</option>
+                        <option value="Oddar Meanchey">Oddar Meanchey</option>
+                        <option value="Kep">Kep</option>
+                        <option value="Pailin">Pailin</option>
+                        <option value="Tboung Khmum">Tboung Khmum</option>
+                    </select> 
+                 
+                </td>
+                <td>
+                    <select name="Country">
+                        <option value="" disabled selected >Country</option>
+                        <option value="Cambodian">Cambodian</option>
+                        <option value="England">England</option>
+                        <option value="China">China</option>
+                        <option value="France">France</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Korea">Korea</option>
+                        <option value="United State">United State</option>
+                    </select>
+                </td>
+                <td>
+                      <input type="text" placeholder="Post Code">  
+                </td>
+                
+            </tr>
+                <tr>
+                    <td colspan="4">
+                        <textarea name="Address" id="" cols="100" rows="5" placeholder="Address" style="width: 100%"></textarea>
+                    </td>
+                </tr> <br>
+                <tr>
+                    <td colspan="2">
+                        <span> <b>Skills</b> </span>
+                    </td>
+                    <td>
+                        <span> <b>Languages</b> </span>
+                    </td>
+                    <tr>
+                        <td>
+                            <div>
+                                <input name="Skills" type="checkbox" value="Designing">Designing
+                            </div>
+                            <div>
+                                <input name="Skills" type="checkbox" value="Database management">Database management
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" name="Skills" value="Coding">Coding
+                            </div>
+                            <div>
+                                <input type="checkbox" name="Skills" value="Debug">Debug
+                            </div>
+                        </td>
+                   
+                    <td>
+                        <div>
+                            <input type="checkbox" name="Languages" value="English">English
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Languages" value="France">France
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="checkbox" name="Languages" value="Chinese">Chinese
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Languages" value="Japanese">Japanese
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <span> <b>Experiences</b> </span>
+                    </td>
+                </tr>
+                <tr>
+                
+                    <td style="padding: 5px">
+                        <div>From</div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+           
+                    </td>
+
+                    <td style="padding: 5px">
+                        <div>To</div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+                        <div style="padding: 5px">
+                            <input type="text" >
+                        </div>
+                    </td>
+                
+                    <td style="padding: 5px" colspan="2">
+                        <div>Description</div>
+                        <div style="padding: 5px">
+                            <input type="text" style="width:100%">
+                        </div >
+                        <div style="padding: 5px">
+                            <input type="text" style="width:100%">
+                        </div >
+                        <div style="padding: 5px">
+                            <input type="text" style="width:100%">
+                        </div >
+                        <div style="padding: 5px">
+                            <input type="text" style="width:100%">
+                        </div >
+                        
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="2">
+                      <h4>Choose your profile photo</h4>
+                      <input type="file" />
+                    </td>
+                  </tr>
+                <tr>
+                    <td colspan="4" dir="rtl">
+                        <button  type="submit" class="button" style="color:white;background-color: Dodgerblue; border:2px solid black">Submit</button>
+                    </td>
+                </tr>   
+            </table>
+        </form>
+    </body>
+</html>
